@@ -1,0 +1,18 @@
+reverse:
+  db_file_path: "xray.db"
+  token: "{{TOKEN}}"
+  http:
+    enabled: true
+    listen_ip: 0.0.0.0
+    listen_port: "7381"
+  dns:
+    enabled: true
+    listen_ip: 0.0.0.0
+    domain: ""
+    is_domain_name_server: false
+    # 静态解析规则
+    resolve:
+    - type: A # A, AAAA, TXT 三种
+      record: localhost
+      value: 127.0.0.1
+      ttl: 60

@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+venv/
+data/
+workspace/
+core/httprobe
+core/xray_linux_amd64
+core/config.yaml
+core/config_tmpl.yaml
+core/reverse.yaml
+output/*
+domains.txt
+urls.txt
