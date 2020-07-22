@@ -57,13 +57,14 @@ python3 httprobe.py domains.txt urls.txt
 # 运行awvs13容器；通过tmux开启多个xray；通过tmux每60秒运行一次./check.sh，用于监控xray扫描状态
 ./start.sh <外网IP> <xray个数>
 
+# 通过tmux进入会话查看xray扫描状态或check.sh脚本运行状态
+tmux a -t scan
+tmux a -t check
+
 # 关闭xray、awvs13容器
 # 注意该脚本会删除awvs13容器，确保awvs13里无扫描任务再执行
 ./stop.sh
 
-# 通过tmux进入会话查看xray扫描状态或check.sh脚本运行状态
-tmux a -t scan
-tmux a -t check
 ```
 
 

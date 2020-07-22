@@ -141,7 +141,7 @@ class AWVS:
                        cookies=self.awvs_cookies,
                        timeout=30 * 4, verify=False)
 
-        data = {"target_id": target_id, "profile_id": "11111111-1111-1111-1111-111111111112",
+        data = {"target_id": target_id, "profile_id": "11111111-1111-1111-1111-111111111117",
                 "schedule": {"disable": False, "start_date": None, "time_sensitive": False}}
         try:
             response = requests.post(self.awvs_host_address + "api/v1/scans", data=json.dumps(data),
