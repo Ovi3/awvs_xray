@@ -28,7 +28,7 @@ awvs13的邮箱、密码：contact@manhtuong.net、Abcd1234
 - toggle.sh： 开关TCP:3443端口对外开放。因为AWVS账号密码固定，需要其它机器访问该端口时再开放
 - start.sh： 开始运行xray和awvs
 - check.sh：检测xray运行状态，如果扫描完成则调用awvs添加扫描任务
-- update.sh： 升级xray
+- update.sh： 升级xray（或执行./xray_linux_amd64 upgrade来升级）
 - core/awvs13.py： 用于添加awvs扫描任务等
 - core/start_xray.sh： xray被动扫描多开脚本
 - core/reverse_tmpl.yaml：xray回连平台配置文件模板

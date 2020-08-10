@@ -27,7 +27,8 @@ reverse = reverse.replace("{{TOKEN}}", token)
 open(reverse_path, "w", encoding="utf-8").write(reverse)
 
 config = open(config_path, "r", encoding="utf-8").read()
-config = config.replace("detect_blind_injection: false", "detect_blind_injection: true")\
+config = config.replace("detect_cors_header_config: true", "detect_cors_header_config: false")\
+    .replace("detect_blind_injection: false", "detect_blind_injection: true")\
     .replace("detect_none_injection_case: false", "detect_none_injection_case: true")\
     .replace("dirscan:\n    enabled: true", "dirscan:\n    enabled: false")\
     .replace("brute_force:\n    enabled: true", "brute_force:\n    enabled: false")\
